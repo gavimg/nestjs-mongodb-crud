@@ -6,9 +6,7 @@ import { ProductModule } from './product/product.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/store', {
-      dbName: 'studentdb',
-    }),
+    MongooseModule.forRoot('mongodb://localhost:27017', { dbName: 'store' }),
     ProductModule,
   ],
   controllers: [AppController],
