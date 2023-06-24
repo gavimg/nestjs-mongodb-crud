@@ -53,7 +53,7 @@ export class CartService {
       );
 
       if (itemIndex > -1) {
-        let item = cart.items[itemIndex];
+        const item = cart.items[itemIndex];
         item.quantity = Number(item.quantity) + Number(quantity);
         item.subTotalPrice = item.quantity * item.price;
 
